@@ -35,7 +35,7 @@ Mendix React Native SSO Login Setup
 1.  From StudioPro select  _Project → Build Native Mobile App_
 2.  Select App Capabilities → DeepLink : Set value to your scheme (appname used in azure callback)
 
--  if you setup your callback in Step 1 the scheme should match that value without the “://”
+-  if you setup your callback in Step 1 the scheme should match that value without the  ://
 	> ex:) If your callback =  _ssotest://_  then your scheme = **ssotest**
 
 

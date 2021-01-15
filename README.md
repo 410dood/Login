@@ -11,8 +11,17 @@ Mendix React Native SSO Login Setup
 
 **1)** **AZURE**
 
--   Setup azure to allow authorization code based sso and mobile redirect
--   Set a callback to "(yourappname)://" no parentheses
+1.	Set up an app registration in Azure for your app. It should include 
+a.	In the implicit grant section select both the access and id token options - ? I only have id token selected 
+b.	In the Redirect URI section set the callback to yourappname:// 
+c.	Set the api permissions for MicrosoftGraph as follows 
+	>	 email 
+		Mail.Read 
+		offline_access 
+		profile 
+ 
+4.	In the Expose Api section set the api permissions to https://{yourappname}-{environment}/user_impersonation  
+
 
 **2)** **SETUP**
 
